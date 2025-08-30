@@ -2,9 +2,9 @@
 
 you can change the clustering radius inside `standalone.py` and see how the behavior changes. 
 
-R = 2 : Crashes
-R = 0.39 does NOT Crash
-R = 0.4 Crashes
+R = 2 : Crashes \\
+R = 0.39 does NOT Crash \\
+R = 0.4 Crashes \\
 
 This is not consistent behavior. 
 
