@@ -1,0 +1,1005 @@
+hfatehi@lxplus944 ~/bug/fastjet-fccanalyses-bugreport $ fccanalysis run  standalone.py
+----> INFO: Loading analyzers from libFCCAnalyses...
+----> INFO: Loading analysis script:
+            /afs/cern.ch/user/h/hfatehi/bug/fastjet-fccanalyses-bugreport/standalone.py
+----> INFO: Multithreading enabled. Running over 16 threads
+----> INFO: Reducing the input file list by fraction "0.001" of total events:
+            	- total number of events: 1,000,000
+            	- targeted number of events: 1,000
+            	- number of events in the resulting file list: 10,000
+            	- number of files after reduction: 1
+----> INFO: Number of the output files: 1
+----> INFO: Running locally...
+----> INFO: Creating dataframe object from files:
+            	- root://eospublic.cern.ch//eos/experiment/fcc/hh/generation/DelphesEvents/fcc_v07/II//mgp8_pp_bb_Q_30000_84000_5f_84TeV/events_000189293.root
+
+----> INFO: Number of local events: 10,000
+----> INFO: Output file path:
+            ./outputs/mgp8_pp_bb_Q_30000_84000_5f_84TeV.root
+#--------------------------------------------------------------------------
+#                         FastJet release 3.4.3
+#                 M. Cacciari, G.P. Salam and G. Soyez                  
+#     A software package for jet finding and analysis at colliders      
+#                           http://fastjet.fr                           
+#	                                                                      
+# Please cite EPJC72(2012)1896 [arXiv:1111.6097] if you use this package
+# for scientific work and optionally PLB641(2006)57 [hep-ph/0512210].   
+#                                                                       
+# FastJet is provided without warranty under the GNU GPL v2 or higher.  
+# It uses T. Chan's closest pair algorithm, S. Fortune's Voronoi code
+# and 3rd party plugin jet algorithms. See COPYING file for details.
+#--------------------------------------------------------------------------
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break ***  *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation *** Break *** segmentation violation
+ *** Break *** segmentation violation
+ *** Break *** segmentation violation
+segmentation violation
+ *** Break *** segmentation violation
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 30 (Thread 0x7fead53f4640 (LWP 1652012) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 29 (Thread 0x7fead57f5640 (LWP 1652011) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 28 (Thread 0x7fead5bf6640 (LWP 1652010) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 27 (Thread 0x7fead5ff7640 (LWP 1652009) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 26 (Thread 0x7fead63f8640 (LWP 1652008) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 25 (Thread 0x7fead67f9640 (LWP 1652007) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 24 (Thread 0x7fead6bfa640 (LWP 1652006) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 23 (Thread 0x7fead6ffb640 (LWP 1652005) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 22 (Thread 0x7fead73fc640 (LWP 1652004) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 21 (Thread 0x7fead77fd640 (LWP 1652003) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 20 (Thread 0x7fead7bfe640 (LWP 1652002) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 19 (Thread 0x7fead7fff640 (LWP 1652001) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 18 (Thread 0x7feadc62d640 (LWP 1652000) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 17 (Thread 0x7feadca2e640 (LWP 1651999) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 16 (Thread 0x7feadce2f640 (LWP 1651998) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 15 (Thread 0x7feafd3f2640 (LWP 1651990) "python3"):
+#0  0x00007feb31e8722a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007feb31e921d8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
+#2  0x00007feb03de5056 in XrdCl::JobManager::RunJobs() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#3  0x00007feb03de5109 in RunRunnerThread () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7feafdbf3640 (LWP 1651989) "python3"):
+#0  0x00007feb31e8722a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007feb31e921d8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
+#2  0x00007feb03de5056 in XrdCl::JobManager::RunJobs() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#3  0x00007feb03de5109 in RunRunnerThread () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7feafe3f4640 (LWP 1651988) "python3"):
+#0  0x00007feb31e8722a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007feb31e921d8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
+#2  0x00007feb03de5056 in XrdCl::JobManager::RunJobs() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#3  0x00007feb03de5109 in RunRunnerThread () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7feafebf5640 (LWP 1651987) "python3"):
+#0  0x00007feb31ed4655 in clock_nanosleep
+GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007feb31ed9247 in nanosleep () from /lib64/libc.so.6
+#2  0x00007feb04b315f8 in XrdSysTimer::Wait(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb03d5030e in XrdCl::TaskManager::RunTasks() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#4  0x00007feb03d50469 in RunRunnerThread () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#5  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#6  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7feaff3f6640 (LWP 1651986) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7feaffbf7640 (LWP 1651985) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7feb003f8640 (LWP 1651984) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7feb00bf9640 (LWP 1651983) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7feb013fa640 (LWP 1651982) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7feb01bfb640 (LWP 1651981) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7feb023fc640 (LWP 1651980) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7feb02bfd640 (LWP 1651979) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7feb033fe640 (LWP 1651978) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7feb03bff640 (LWP 1651977) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7feb3281f740 (LWP 1651853) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3724af in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash. If you see question
+marks as part of the stack trace, try to recompile with debugging information
+enabled and export CLING_DEBUG=1 environment variable before running.
+You may get help by asking at the ROOT forum https://root.cern/forum
+preferably using the command (.forum bug) in the ROOT prompt.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs or (preferably) using the command (.gh bug) in
+the ROOT prompt. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+===========================================================
+
+
+ *** Break *** segmentation violation
+hfatehi@lxplus944 ~/bug/fastjet-fccanalyses-bugreport $ 
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 30 (Thread 0x7fead53f4640 (LWP 1652012) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 29 (Thread 0x7fead57f5640 (LWP 1652011) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 28 (Thread 0x7fead5bf6640 (LWP 1652010) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 27 (Thread 0x7fead5ff7640 (LWP 1652009) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 26 (Thread 0x7fead63f8640 (LWP 1652008) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 25 (Thread 0x7fead67f9640 (LWP 1652007) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 24 (Thread 0x7fead6bfa640 (LWP 1652006) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 23 (Thread 0x7fead6ffb640 (LWP 1652005) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 22 (Thread 0x7fead73fc640 (LWP 1652004) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 21 (Thread 0x7fead77fd640 (LWP 1652003) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 20 (Thread 0x7fead7bfe640 (LWP 1652002) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 19 (Thread 0x7fead7fff640 (LWP 1652001) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 18 (Thread 0x7feadc62d640 (LWP 1652000) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 17 (Thread 0x7feadca2e640 (LWP 1651999) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 16 (Thread 0x7feadce2f640 (LWP 1651998) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a443a1 in fastjet::ClusterSequence::_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x00007fea00000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+Thread 15 (Thread 0x7feafd3f2640 (LWP 1651990) "python3"):
+#0  0x00007feb31e8722a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007feb31e921d8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
+#2  0x00007feb03de5056 in XrdCl::JobManager::RunJobs() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#3  0x00007feb03de5109 in RunRunnerThread () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7feafdbf3640 (LWP 1651989) "python3"):
+#0  0x00007feb31e8722a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007feb31e921d8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
+#2  0x00007feb03de5056 in XrdCl::JobManager::RunJobs() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#3  0x00007feb03de5109 in RunRunnerThread () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7feafe3f4640 (LWP 1651988) "python3"):
+#0  0x00007feb31e8722a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007feb31e921d8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
+#2  0x00007feb03de5056 in XrdCl::JobManager::RunJobs() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#3  0x00007feb03de5109 in RunRunnerThread () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7feafebf5640 (LWP 1651987) "python3"):
+#0  0x00007feb31ed4655 in clock_nanosleep
+GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007feb31ed9247 in nanosleep () from /lib64/libc.so.6
+#2  0x00007feb04b315f8 in XrdSysTimer::Wait(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb03d5030e in XrdCl::TaskManager::RunTasks() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#4  0x00007feb03d50469 in RunRunnerThread () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdCl.so.3
+#5  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#6  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7feaff3f6640 (LWP 1651986) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7feaffbf7640 (LWP 1651985) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7feb003f8640 (LWP 1651984) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7feb00bf9640 (LWP 1651983) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7feb013fa640 (LWP 1651982) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7feb01bfb640 (LWP 1651981) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7feb023fc640 (LWP 1651980) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7feb02bfd640 (LWP 1651979) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7feb033fe640 (LWP 1651978) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7feb03bff640 (LWP 1651977) "python3"):
+#0  0x00007feb31f0e87e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007feb04b2b7a2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#2  0x00007feb04b2772d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#3  0x00007feb04b30d07 in XrdSysThread_Xeq () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/xrootd/5.7.1-p537bk/lib/libXrdUtils.so.3
+#4  0x00007feb31e8a19a in start_thread () from /lib64/libc.so.6
+#5  0x00007feb31f0f240 in clone3 () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7feb3281f740 (LWP 1651853) "python3"):
+#0  0x00007feb31ed8fff in wait4 () from /lib64/libc.so.6
+#1  0x00007feb31e4b7e3 in do_system () from /lib64/libc.so.6
+#2  0x00007feb2cd176d3 in TUnixSystem::StackTrace() () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#3  0x00007feb2d3723bf in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libcppyy_backend.so
+#4  0x00007feb2cd16e91 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sw.hsf.org/key4hep/releases/2024-10-03/x86_64-almalinux9-gcc14.2.0-opt/root/6.32.04-vms5ij/lib/libCore.so.6.32
+#5  <signal handler called>
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash. If you see question
+marks as part of the stack trace, try to recompile with debugging information
+enabled and export CLING_DEBUG=1 environment variable before running.
+You may get help by asking at the ROOT forum https://root.cern/forum
+preferably using the command (.forum bug) in the ROOT prompt.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs or (preferably) using the command (.gh bug) in
+the ROOT prompt. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00007feb17a44eda in fastjet::ClusterSequence::_minheap_faster_tiled_N2_cluster() () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#7  0x00007feb1798506a in fastjet::ClusterSequence::ClusterSequence<fastjet::PseudoJet>(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&, fastjet::JetDefinition const&, bool const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#8  0x00007feb186fa148 in JetClustering::clustering_antikt::operator()(std::vector<fastjet::PseudoJet, std::allocator<fastjet::PseudoJet> > const&) () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/fccanalyses/0.10.0-vepitp/lib/libFastJet.so
+#9  0x00007feb040ba067 in ?? ()
+#10 0x000000003e947ae1 in ?? ()
+#11 0x0000000042c80000 in ?? ()
+#12 0x0000000200000001 in ?? ()
+#13 0x0000000000000001 in ?? ()
+#14 0x00007feb17c8b568 in vtable for fastjet::ClusterSequence () from /cvmfs/sw.hsf.org/key4hep/releases/2025-01-28/x86_64-almalinux9-gcc14.2.0-opt/delphes/3.5.1pre12-e4qfky/lib/libDelphes.so
+#15 0x00007feb000003e7 in ?? ()
+#16 0x3ff0000000000000 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+===========================================================
+
+
