@@ -6,7 +6,7 @@ processList = {
     "mgp8_pp_bb_Q_30000_84000_5f_84TeV":    {"fraction":0.001},
 
 }
-outputDir   = "./outputs/treemakerel/"
+outputDir   = "./outputs/"
 # outputDirEos = "/eos/users/r/rjafaris" #helps the output to be visible in CERNbox (does not work!)
 
 # Define the input dir (optional)
